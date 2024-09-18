@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nila Apps Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="topbar">
+            <div class="logo">
+                <h1>Horizon.</h1>
+            </div>
+            <div class="search" >
+                <i class="fa fa-search" ></i>
+                <input type="text" id="search"  placeholder="search..." >
+                <span class="left-pan"><i class="fa fa-microphone"></i></span>
+                <label for="search"></label>
+            </div>
+            <h5>user</h5>
+            <div class="user">
+                <img src="user.png">
+                
+            </div>
+           
+        </div>
+        <div class="sidebar">
+            <ul>
+                <li>
+                    <a href="#">
+                        <div><strong>Course Code</strong>
+                            <p id="courseCode"><h6>BA3102</h6></p></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                    <div><strong>Course Name</strong>
+                        <p id="courseName"><h6>Quantitative techniques</h6></p></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                    <div><strong>Course Type</strong>
+                        <p id="courseType"><h6>Program Elective</h6></p></div>
+                </a>
+                </li>
+                <li>
+                    <a href="#">
+                    <div><strong>Course Period</strong>
+                        <p id="coursePeriod"><h6>Semester - I</h6></p> </div>
+                </a>
+                </li>
+                <br>
+                <li>
+                    <a href="#">
+                    <div class="menu-item"><strong>Credits(4)</strong>
+                            <p id="credits">Lecture   - 3</p>
+                            <p id="credits">Tutorial  - 0</p>
+                            <p id="credits">Practical - 1</p>
+                            <p id="credits">Project   - 0</p></div>
+                </a>
+                </li>
+                <br>
+                <br>
+                <li>
+                    <a href="#">
+                        <div class="container">
+                            <h4><strong>Course Outcomes(C0s)</strong></h4>
+                        <div class="column">
+                            <button id="buttonA">C02</button>
+                            <button id="buttonB">C04</button>
+                            <button id="buttonC">C05</button>
+                        </div><br>
+                        <div class="column">
+                            <button id="buttonC2">C07</button>
+                            <button id="buttonB2">C013</button>
+                            <button id="buttonA2">C014</button>
+                        </div>
+                    </div>
+                </a>
+                </li>
+                <br>
+                <br>
+                <li>
+                    <a href="#">
+                        <div class="container">
+                            <h4><strong>Mapped to this course</strong></h4>
+                        <div class="column2">
+                            <button style="background-color:#2630f2;" id="buttonA">P07</button>
+                            <button  style="background-color:#2630f2;" id="buttonB">P010</button>
+                            <button  style="background-color:#2630f2;" id="buttonC">P012</button>
+                        </div><br>
+                        <div class="column">
+                            <button  style="background-color:#2630f2;" id="buttonC2">Po8</button>
+                        </div>
+                    </div>
+                </a>
+                </li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="cards">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-name">Total students <strong>102</strong></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-name">Course Average Mark <strong>85%</strong></div>
+                    </div>
+                </div>
+            </div>
+            <div class="charts">
+                <div class="chart"></div>
+                    <h2>Assessment progress</h2>
+                    <br>
+                    <div id="chart_div" id="bar-chart"></div>
+                    </br>
+                   
+                    <div class="chart">
+                        <h2>Student's Attendance</h2>
+                        <canvas id="myChart" style="width:100%;max-width:700px"></canvas>
+                    </div>
+                    <canvas id="myChart" style="width:100%;max-width:700px"></canvas>
+                </div>
+                
+            </div>
+
+
+
+
+        </div>
+    </div>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="chart1.js"></script>
+    <script src="chart2.js"></script>
+    </body>
+</html>
